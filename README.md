@@ -1,6 +1,6 @@
 ![Banner](./banner.png)
 
-# 🧭 Plano de Estudos Prático para inciar sua carreira em Cybersecurity
+# 🧭 Plano de estudos para inciar sua carreira em Cybersecurity
 
 Este é um guia completo para se tornar um engenheiro de cibersegurança de sucesso, baseado em funções como **Pentest**, **AppSec**, **Cloud Security**, **DevSecOps**, **SOC** e muito mais - com recursos gratuitos, ferramentas e conceitos para se destacar.
 
@@ -8,6 +8,7 @@ Este é um guia completo para se tornar um engenheiro de cibersegurança de suce
 
 ## ✅ Planos Concluídos
 
+- [ ] [Plano de Estudo de Linux](https://github.com/vitorluigi/carreira-em-cyber/blob/main/plano-de-estudo-linux.md)
 <!-- - [ ] Plano de Estudo de Habilidades Comuns  
 - [ ] Plano de Estudo de Segurança em AWS  
 - [ ] Plano de Estudo de Segurança em GCP  
@@ -22,23 +23,23 @@ Este é um guia completo para se tornar um engenheiro de cibersegurança de suce
 
 ## 📌 Próximos Planos
 
-- [ ] Plano de Estudo de Segurança em AWS  
-- [ ] Plano de Estudo de Segurança em GCP  
 - [ ] Plano de Estudo de Pentest Web  
+- [ ] Plano de Estudo de DevSecOps  
 - [ ] Plano de Testes de Segurança de Aplicações  
 - [ ] Plano de Estudo de Segurança de APIs  
 - [ ] Plano de Estudo de Modelagem de Ameaças  
 - [ ] Plano de Estudo de GRC (Governança, Riscos e Conformidade)  
-- [ ] Plano de Segurança em Azure  
-- [ ] Plano de DevSecOps  
-- [ ] Plano de Segurança com Docker  
-- [ ] Plano de Segurança com Kubernetes  
-- [ ] Plano de Segurança de Redes  
+- [ ] Plano de Estudo de Segurança em AWS  
+- [ ] Plano de Estudo de Segurança em GCP  
+- [ ] Plano de Estudo de Segurança em Azure  
+- [ ] Plano de Estudo de Segurança com Docker  
+- [ ] Plano de Estudo de Segurança com Kubernetes  
+- [ ] Plano de Estudo de Segurança de Redes  
 - [ ] Plano de Estudo de Criptografia  
-- [ ] Plano de Segurança da Cadeia de Suprimentos de Software  
-- [ ] Plano de Revisão Segura de Código  
-- [ ] Plano de Ciclo de Vida de Desenvolvimento Seguro  
-- [ ] Plano de Arquitetura de Segurança  
+- [ ] Plano de Estudo de Segurança da Cadeia de Suprimentos de Software  
+- [ ] Plano de Estudo de Security Code Review
+- [ ] Plano de Estudo de Ciclo de Vida de Desenvolvimento Seguro  
+- [ ] Plano de Estudo de Arquitetura de Segurança  
 
 ---
 
@@ -93,7 +94,7 @@ Ferramenta útil para construir seu currículo: [rxresu.me](https://rxresu.me)
 
 ---
 
-## 🔎 Onde buscar vagas?
+## 🔎 Como buscar vagas?
 
 Refine sua busca com base em:
 
@@ -101,6 +102,7 @@ Refine sua busca com base em:
 - Suas habilidades versus requisitos da vaga
 - Nível de experiência
 
+<!--
 ### Sites úteis:
 
 - [LinkedIn](https://linkedin.com)
@@ -109,7 +111,7 @@ Refine sua busca com base em:
 - [Instahyre](https://instahyre.com)
 - [Cutshort](https://cutshort.io)
 - Comunidades: Null Jobs, Cybersecurity Jobs
-
+-->
 ---
 
 ## 🎯 Preparação para entrevistas
