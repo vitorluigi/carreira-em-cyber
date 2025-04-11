@@ -1,4 +1,4 @@
-# Plano de estudo de competências em Linux para o início da carreira em Cybersecurity
+# Competências em Linux para o início da carreira em Cybersecurity
 
 ### Livros
 1. [Linux Basics for Hackers](https://amzn.in/d/0otpFHj)
@@ -222,8 +222,7 @@ Conta palavras, linhas e caracteres
 Compacta arquivos em .zip
 - Exemplo: zip backup.zip arquivo1.txt arquivo2.txt
 
-
-### Além dos comandos básicos, profissionais de segurança (principalmente AppSec e Pentesters) precisam conhecer:
+# Comandos que profissionais de segurança (principalmente AppSec e Pentesters) precisam conhecer:
 
 ## **netcat**
 Ferramenta versátil para leitura, escrita e depuração de conexões de rede.
