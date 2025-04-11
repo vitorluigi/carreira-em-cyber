@@ -1,6 +1,6 @@
-![Banner](./banner.png)
+![Banner](./vamos.png)
 
-# 🧭 Plano de estudos para inciar sua carreira em Cybersecurity
+# Plano de estudos para inciar sua carreira em Cybersecurity
 
 Este é um guia completo para se tornar um engenheiro de cibersegurança de sucesso, baseado em funções como **Pentest**, **AppSec**, **Cloud Security**, **DevSecOps**, **SOC** e muito mais - com recursos gratuitos, ferramentas e conceitos para se destacar.
 
@@ -43,7 +43,7 @@ Este é um guia completo para se tornar um engenheiro de cibersegurança de suce
 
 ---
 
-## 📖 Por que criei este repositório?
+## Por que criei este repositório?
 
 Criei este projeto inspirado em iniciativas como o [coding-interview-security](https://github.com/jwasham/coding-interview-university), que me tocarem e motivou a colaborar com a comunidade interessada em começar a carreira em segurança. O objetivo é ajudar pessoas que precisam de **orientação clara** para aprender habilidades específicas de forma prática.
 
@@ -57,7 +57,7 @@ Alguns tópicos são comuns a todas as áreas de segurança listadas. Veja:
 -->
 ---
 
-## ⚙️ Pré-requisitos
+## Pré-requisitos
 
 - Comprometimento diário
 - Origem técnica (ajuda, mas não é obrigatório)
@@ -67,7 +67,7 @@ Alguns tópicos são comuns a todas as áreas de segurança listadas. Veja:
 
 ---
 
-## 🧭 Como usar este repositório
+## Como usar este repositório?
 
 - Leia de cima para baixo e **marque os tópicos que já domina**
 - Clone este repositório e use como **checklist pessoal**
@@ -75,7 +75,7 @@ Alguns tópicos são comuns a todas as áreas de segurança listadas. Veja:
 
 ---
 
-## 📝 Atualize seu currículo
+## Atualize seu currículo
 
 Antes de aplicar para uma vaga, reflita:
 
@@ -94,7 +94,7 @@ Ferramenta útil para construir seu currículo: [rxresu.me](https://rxresu.me)
 
 ---
 
-## 🔎 Como buscar vagas?
+## Como buscar vagas?
 
 Refine sua busca com base em:
 
@@ -114,7 +114,7 @@ Refine sua busca com base em:
 -->
 ---
 
-## 🎯 Preparação para entrevistas
+## Preparação para entrevistas
 
 > ⚠️ **Nota:** Essa seção está em desenvolvimento!
 <!-- Quando estiver preparado, revise questões comuns como:
@@ -134,7 +134,7 @@ Refine sua busca com base em:
 -->
 ---
 
-## 🤝 Contribua com este projeto
+## Contribua com este projeto
 
 Quer colaborar?  
 Faça um **fork** do repositório, adicione suas sugestões e envie um **pull request** para revisão.
@@ -142,5 +142,3 @@ Faça um **fork** do repositório, adicione suas sugestões e envie um **pull re
 ---
 
 **Desejo bons estudos e sucesso na sua trajetória! 🔐💻**
-
-
