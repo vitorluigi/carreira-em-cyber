@@ -2,7 +2,7 @@
 
 ### Livros
 1. [Linux Basics for Hackers](https://amzn.in/d/0otpFHj)
-2. [Crtificação Linux Essentials](https://a.co/d/0aRknOJ)
+2. [Certificação Linux Essentials](https://a.co/d/0aRknOJ)
 
 ### Cursos
 1. [Introdução aos comandos Linux e Scripts](https://www.coursera.org/learn/hands-on-introduction-to-linux-commands-and-shell-scripting)
