@@ -29,7 +29,7 @@ A seguir, compartilho os **principais tópicos de estudo**, suas descrições e 
 
 ---
 
-## 1. Provedores de Nuvem (Cloud Prividers) - AWS, Azure, GCP
+## 1. Provedores de Nuvem (Cloud Providers) - AWS, Azure, GCP
 
 Estude e se especialize ao menos um dos principais provedores de nuvem:
 - **AWS (Amazon Web Services)**
