@@ -7,8 +7,8 @@ A seguir, compartilho os **principais tópicos de estudo**, suas descrições e 
 ---
 ## Livros recomendados
 
-- **[Cloud Computing for Dummies](https://a.co/d/g6G1vI9)** – Conceitos base ideal para quem está começando  
-- **[AWS em Ação](https://a.co/d/5XAHxRw)** – Ótima referência prática sobre uso da AWS em projetos reais
+- [Cloud Computing for Dummies](https://a.co/d/g6G1vI9) – Conceitos base ideal para quem está começando  
+- [AWS em Ação](https://a.co/d/5XAHxRw) – Ótima referência prática sobre uso da AWS em projetos reais
 
 ---
 
@@ -56,7 +56,7 @@ Dica: As provas de certificação dos principais provedores de Cloud focam muito
 - Gerenciamento de usuários, funções, permissões e políticas.
 - Princípios como menor privilégio, autenticação multifator (MFA) e segregação de funções.
 
-**Leitura recomendada:**
+**Material de apoio:**
 - [Guia IAM da AWS em português](https://docs.aws.amazon.com/pt_br/IAM/latest/UserGuide/introduction.html)
 - [Start with GCP IAM official doc](https://cloud.google.com/iam/docs/overview)
 - [Usando IAM de forma segura](https://cloud.google.com/iam/docs/using-iam-securely)
@@ -69,9 +69,11 @@ Estude como os sistemas distribuídos modernos utilizam **microsserviços** e **
 
 ## 6. Criptografia e Proteção de Dados na Nuvem
 
-- **Criptografia em repouso e em trânsito**
-- **KMS (Key Management Service)**
-- **Controle de acesso a dados sensíveis**
+- Criptografia em repouso e em trânsito
+- KMS (Key Management Service)
+- Controle de acesso a dados sensíveis
+
+**Material de apoio:**
 
 - [Artigo "Criptografia de dados na segurança em nuvem - Como funciona?"](https://tivit.com/criptografia-de-dados/)
 - [Google Cloud Key Management Service (KMS)](https://medium.com/@habbema/google-cloud-key-management-service-kms-f45a2680207e)
@@ -79,17 +81,21 @@ Estude como os sistemas distribuídos modernos utilizam **microsserviços** e **
 ## 7. Redes em Nuvem (Cloud Networking)
 
 Entenda:
-- **VPCs (Virtual Private Cloud)**, sub-redes, gateways, balanceadores de carga, grupos de segurança, VPNs e NAT
+- VPCs (Virtual Private Cloud), sub-redes, gateways, balanceadores de carga, grupos de segurança, VPNs e NAT
 - Segurança de perímetro e segmentação de rede
+
+**Material de apoio:**
 
 - [AWS re:Invent 2022 - Dive deep on AWS networking infrastructure - NET402](https://www.youtube.com/watch?v=HJNR_dX8g8c)
 - [Introdução a AWS Networking](https://www.youtube.com/watch?v=XZbvQWkpJTI&pp=ygUOYXdzIG5ldHdvcmtpbmc%3D)
 
 ## 8. Fundamentos adicionais importantes
 
-- **Governança e Compliance em Nuvem**: Conheça normas como ISO 27001, GDPR, LGPD e as boas práticas de governança em ambientes cloud.
-- **Zero Trust Architecture**: A arquitetura moderna de segurança assume que nenhuma entidade é confiável por padrão.
-- **DevSecOps**: Segurança integrada ao pipeline de desenvolvimento.
+- Governança e Compliance em Nuvem: Conheça normas como ISO 27001, GDPR, LGPD e as boas práticas de governança em ambientes cloud.
+- Zero Trust Architecture: A arquitetura moderna de segurança assume que nenhuma entidade é confiável por padrão.
+- DevSecOps: Segurança integrada ao pipeline de desenvolvimento.
+
+**Material de apoio:**
 
 - [DevSecOps Learnig Path](https://www.cloudskillsboost.google/paths/76?locale=pt_BR)
 - [LGPD para administradores de rede - YouTube](https://www.youtube.com/watch?v=Dwx5D4S1a6k&pp=ygUTbGdwZCBlcXVpcGVzIGRlIHRpIA%3D%3D)
