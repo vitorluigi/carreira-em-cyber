@@ -99,3 +99,43 @@ Entenda:
 
 - [DevSecOps Learnig Path](https://www.cloudskillsboost.google/paths/76?locale=pt_BR)
 - [LGPD para administradores de rede - YouTube](https://www.youtube.com/watch?v=Dwx5D4S1a6k&pp=ygUTbGdwZCBlcXVpcGVzIGRlIHRpIA%3D%3D)
+
+----
+
+## 🗓️ Cronograma de Estudos – 8 Semanas (2h por dia, 5 dias por semana)
+
+### Semana 1: Introdução e Fundamentos
+Dia 1-2: Conceitos de Cloud Computing, SaaS/PaaS/IaaS
+Dia 3-4: Modelos de Implantação (pública, privada, híbrida)
+Dia 5: Estudo do modelo de responsabilidade compartilhada
+
+### Semana 2: Provedores de Nuvem (AWS, Azure, GCP)
+Dia 1-3: Fundamentos de AWS (curso gratuito)
+Dia 4-5: Fundamentos de Azure e GCP (visão comparativa)
+
+### Semana 3: IAM e Gestão de Acessos
+Dia 1-2: Conceitos de IAM (usuários, roles, políticas)
+Dia 3-5: Prática com IAM na AWS (Lab do AWS Learn)
+
+### Semana 4: Microsserviços e Containers
+Dia 1-2: Fundamentos de Microsserviços e Docker
+Dia 3-4: Introdução ao Kubernetes
+Dia 5: Riscos e segurança em ambientes containerizados
+
+### Semana 5: Criptografia em Nuvem
+Dia 1-3: Criptografia em repouso e em trânsito
+Dia 4-5: Gerenciamento de chaves (KMS)
+
+### Semana 6: Redes em Nuvem
+Dia 1-2: Conceito de VPCs, sub-redes, NAT, VPN
+Dia 3-5: Segurança de rede na nuvem (grupos de segurança, ACLs)
+
+### Semana 7: Fundamentos Extras
+Dia 1: Zero Trust Architecture
+Dia 2: Introdução a DevSecOps
+Dia 3-4: Compliance e LGPD na nuvem
+Dia 5: Leitura de artigo técnico/ebook
+
+### Semana 8: Revisão e Simulados
+Dia 1-3: Revisão geral e prática com quizzes
+Dia 4-5: Simulado final ou case prático (configuração segura em nuvem)
