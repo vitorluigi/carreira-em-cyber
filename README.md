@@ -9,6 +9,9 @@ Este é um guia completo para se tornar um engenheiro de cibersegurança de suce
 ## ✅ Planos Concluídos
 
 - [ ] [Plano de Estudo de Linux](https://github.com/vitorluigi/carreira-em-cyber/blob/main/plano-de-estudo-linux.md)
+- [ ] [Plano de Estudo de Cloud](https://github.com/vitorluigi/carreira-em-cyber/blob/main/plano-de-estudo-cloud.md)
+- [ ] [Plano de Estudo de Networking](https://github.com/vitorluigi/carreira-em-cyber/blob/main/plano-de-estudo-networking.md)
+
 <!-- - [ ] Plano de Estudo de Habilidades Comuns  
 - [ ] Plano de Estudo de Segurança em AWS  
 - [ ] Plano de Estudo de Segurança em GCP  
