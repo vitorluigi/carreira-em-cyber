@@ -11,6 +11,8 @@ Este é um guia completo para se tornar um engenheiro de cibersegurança de suce
 - [ ] [Plano de Estudo de Linux](https://github.com/vitorluigi/carreira-em-cyber/blob/main/plano-de-estudo-linux.md)
 - [ ] [Plano de Estudo de Cloud](https://github.com/vitorluigi/carreira-em-cyber/blob/main/plano-de-estudo-cloud.md)
 - [ ] [Plano de Estudo de Networking](https://github.com/vitorluigi/carreira-em-cyber/blob/main/plano-de-estudo-networking.md)
+- [ ] [Plano de Estudo de DevSecOps](https://github.com/vitorluigi/carreira-em-cyber/blob/main/plano-de-estudo-devsecops.md)
+
 
 <!-- - [ ] Plano de Estudo de Habilidades Comuns  
 - [ ] Plano de Estudo de Segurança em AWS  
@@ -26,11 +28,13 @@ Este é um guia completo para se tornar um engenheiro de cibersegurança de suce
 
 ## 📌 Próximos Planos
 
-- [ ] Plano de Estudo de Pentest Web  
-- [ ] Plano de Estudo de DevSecOps  
-- [ ] Plano de Testes de Segurança de Aplicações  
+- [ ] Plano de Testes de Segurança de Aplicações
+- [ ] Plano de Estudo de Criptografia  
+- [ ] Plano de Estudo de Segurança da Cadeia de Suprimentos de Software  
+- [ ] Plano de Estudo de Security Code Review
 - [ ] Plano de Estudo de Segurança de APIs  
-- [ ] Plano de Estudo de Modelagem de Ameaças  
+- [ ] Plano de Estudo de Modelagem de Ameaças
+- [ ] Plano de Estudo de Pentest Web  
 - [ ] Plano de Estudo de GRC (Governança, Riscos e Conformidade)  
 - [ ] Plano de Estudo de Segurança em AWS  
 - [ ] Plano de Estudo de Segurança em GCP  
@@ -38,9 +42,6 @@ Este é um guia completo para se tornar um engenheiro de cibersegurança de suce
 - [ ] Plano de Estudo de Segurança com Docker  
 - [ ] Plano de Estudo de Segurança com Kubernetes  
 - [ ] Plano de Estudo de Segurança de Redes  
-- [ ] Plano de Estudo de Criptografia  
-- [ ] Plano de Estudo de Segurança da Cadeia de Suprimentos de Software  
-- [ ] Plano de Estudo de Security Code Review
 - [ ] Plano de Estudo de Ciclo de Vida de Desenvolvimento Seguro  
 - [ ] Plano de Estudo de Arquitetura de Segurança  
 
