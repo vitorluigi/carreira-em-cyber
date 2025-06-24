@@ -5,10 +5,6 @@ __Exemplo:__
 Exemplo:
 Imagine uma equipe desenvolvendo uma aplicação web. Em uma abordagem tradicional, os testes de segurança podem ocorrer apenas quando o aplicativo está quase pronto. No DevSecOps, a segurança é integrada desde o início, com ferramentas automatizadas escaneando o código em tempo real à medida em que é escrito, e as equipes de segurança trabalhando lado a lado com os desenvolvedores para corrigir rapidamente eventuais bugs de segurança.
 
-## O que é CI/CD em DevOps?
-Uma das práticas fundamentais no DevOps é o CI/CD, que significa Integração Contínua (CI) e Entrega Contínua (CD). Essas práticas permitem que o código seja desenvolvido, testado e implantado de forma automatizada, garantindo mais agilidade e qualidade no processo de desenvolvimento.
-
-![Diagrama DevOps](https://github.com/vitorluigi/carreira-em-cyber/raw/main/images/devsecops-diagrama.png)
 ---
 ## Livros Recomendados 
 
@@ -31,7 +27,96 @@ Uma das práticas fundamentais no DevOps é o CI/CD, que significa Integração 
 - [DevSecOps & DevOps with Jenkins, Kubernetes, Terraform & AWS](https://www.udemy.com/course/devsecops-with-terraform-kubernetes-jenkins-aws/?couponCode=ST16MT230625A) [EN] - Implementar SAST, SCA e DAST no Jenkins DevSecOps Pipeline a partir do zero e configurar infra usando Terraform e Kubernetes na AWS.
 - [DevSecOps by KodeCloud](https://kodekloud.com/courses/devsecops) [EN] - Um curso prático sobre o domínio de ferramentas e metodologias DevSecOps com laboratórios práticos. 
 
+## O que é CI/CD em DevOps?
+Uma das práticas fundamentais no DevOps é o CI/CD, que significa Integração Contínua (CI) e Entrega Contínua (CD). Essas práticas permitem que o código seja desenvolvido, testado e implantado de forma automatizada, garantindo mais agilidade e qualidade no processo de desenvolvimento.
+
+### Integração Contínua (CI)
+Na Integração Contínua, os desenvolvedores integram seu código em um repositório central várias vezes ao dia. Cada integração é verificada por meio de testes automatizados, o que ajuda a identificar erros rapidamente. O objetivo é detectar problemas no código antes que eles se tornem grandes obstáculos.
+
+### Entrega Contínua (CD)
+A Entrega Contínua, por sua vez, garante que o software esteja sempre em um estado pronto para ser implantado em ambiente de produção. Após os testes automatizados, o código aprovado segue automaticamente para os próximos estágios do pipeline de deploy, minimizando o tempo entre a conclusão do desenvolvimento e a entrega de novos recursos para o usuário final.
+Essas práticas são vitais para reduzir o tempo de entrega e aumentar a frequência de atualizações de software, o que é uma demanda comum em ambientes ágeis e altamente competitivos.
+
+![Diagrama DevOps](https://github.com/vitorluigi/carreira-em-cyber/raw/main/images/DevOps.png)
+
+## Automação é a chave
+No DevOps, automação é fundamental. Desde os testes automatizados até a infraestrutura como código, a automação garante consistência e qualidade no desenvolvimento de software. Estude como automatizar diferentes partes do ciclo de desenvolvimento e operações.
+
+> O ciclo contínuo do DevOps integrando planejamento, desenvolvimento, testes e operações com ferramentas essenciais como Git, Docker, Jenkins, Kubernetes e AWS, otimizando o processo de entrega e monitoramento de software.
+![DevOps Tools](https://github.com/vitorluigi/carreira-em-cyber/blob/main/images/devopstools.webp)
+
 ---
+
+## 🔐 Segurança em Cada Fase do DevOps (DevSecOps)
+
+Agora que já entendem um pouquinho sobre DevOps vamos voltar ao assunto principal deste plano que é apresentar as responsabilidades e atividades de segurança aplicadas em cada fase do ciclo DevOps.
+
+![DevSecOps Tools](https://github.com/vitorluigi/carreira-em-cyber/blob/main/images/devsecops.jpg)
+
+### 1. Requisitos / Planejamento
+
+- **Gatilho:** Segurança no negócio.
+
+### Atividades de Segurança:
+- Análise de negócio com foco em riscos.
+- Benchmarks e requisitos de conformidade.
+- Definição de requisitos de segurança.
+
+## 2. Design / Arquitetura
+
+- **Gatilho:** Aplicação ou features de design.
+
+### Atividades de Segurança:
+- Modelagem de Ameaças.
+- Definição de baseline de segurança e controles de acesso.
+- Casos de mau uso e abuso.
+
+## 3. Secure Development
+
+- **Gatilho:** Pull, clone ou commit.
+
+### Atividades de Segurança:
+- SAST (Static Application Security Testing).
+- SCA (Software Composition Analysis).
+- Secret Scanning.
+- Integração de plugin de SAST na IDE.
+- Security Code Review.
+- Integração com plataformas ASPM (Application Security Posture Management).
+
+## 4. Testes
+
+- **Gatilho:** Build e integração contínua, testes unitários.
+
+### Atividades de Segurança:
+- SAST e SCA contínuos.
+- DAST (Dynamic Application Security Testing).
+- IAST (Interactive Application Security Testing).
+- Testes AppSec automatizados.
+- Scan de imagem e containers.
+
+## 5. Deploy
+
+- **Gatilho:** Publicação de artefato e início da infraestrutura.
+
+### Atividades de Segurança:
+- Image Scan e assinatura de imagens.
+- Hardening.
+- Pentests direcionados.
+- Scan de vulnerabilidades em sistemas, containers e infraestrutura.
+- Verificação de repositórios e artefatos.
+
+## 6. Monitoramento
+
+- **Gatilho:** Atividades contínuas de operação.
+
+### Atividades de Segurança:
+- Monitoramento de logs e eventos.
+- RASP (Runtime Application Self-Protection).
+- Pentest contínuo.
+- Resposta a incidentes e IDR (Incident Detection and Response).
+- Gestão de vulnerabilidades.
+- Segurança de APIs.
+
 ## Papéis e Responsabilidades
 
 - Implementar ferramentas de segurança nos pipelines de integração e entrega contínua (CI/CD) para escanear automaticamente vulnerabilidades e problemas de segurança durante o desenvolvimento.
@@ -112,3 +197,7 @@ Uma das práticas fundamentais no DevOps é o CI/CD, que significa Integração 
 - **ELK (Elasticsearch, Logstash e Kibana)**: Stack para centralização de logs e análise.
 - **OWASP Dependency Track**: Monitoramento contínuo de vulnerabilidades em dependências de terceiros.
 - **JFrog XRay**: Ferramenta de análise de componentes para detecção de vulnerabilidades e problemas de conformidade de licença.
+
+## 📌 Conclusão
+
+O objetivo do DevSecOps é garantir que cada fase do DevOps tenha **atividades automatizadas e contínuas de segurança**, tornando a segurança uma responsabilidade compartilhada entre todas as equipes envolvidas.
