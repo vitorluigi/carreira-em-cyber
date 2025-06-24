@@ -1,4 +1,4 @@
-![Banner](./vamos.png)
+![Banner](./images/vamos.png)
 
 # Plano de estudos para inciar sua carreira em Cybersecurity
 
