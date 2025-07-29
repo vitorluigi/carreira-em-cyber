@@ -39,37 +39,32 @@ As perguntas são classificadas com base em:
 
 Se você está iniciando ou fazendo transição para AppSec, estude os materiais abaixo antes de praticar as perguntas:
 
-<-- ### 🧪 Planos de Estudo
+### Planos de estudo adicionais
 
-- ✅ [Plano de Estudo de Habilidades Comuns (3 meses)](#)
-- ✅ [20 Livros Essenciais sobre Segurança](#)
-- ✅ [Plano de Estudo em DevSecOps](https://github.com/vitorluigi/carreira-em-cyber/blob/main/plano-de-estudo-devsecops.md)
-- ✅ [Plano de Estudo em Cloud](https://github.com/vitorluigi/carreira-em-cyber/blob/main/plano-de-estudo-cloud.md)
-- ✅ [Plano de Estudo em Pentest Web](#)
-- ⭐ [Plano de Estudo de Segurança (favorito)](#) -->
+- [Plano de Estudo de Habilidades Comuns (3 meses)](#)
+- [20 Livros Essenciais sobre Segurança](#)
+- [Plano de Estudo em DevSecOps](https://github.com/vitorluigi/carreira-em-cyber/blob/main/plano-de-estudo-devsecops.md)
+- [Plano de Estudo em Cloud](https://github.com/vitorluigi/carreira-em-cyber/blob/main/plano-de-estudo-cloud.md)
 
-## 🔐 Foco Técnico do Material
+### Foco técnico do material
 
 Este repositório abordará:
 
-- 🔍 Revisão de Código Seguro
-- 🧠 Modelagem de Ameaças (Threat Modeling)
-- 👨‍💻 Boas Práticas de Codificação Segura
-- 🚀 Desenvolvimento Seguro (Secure SDLC)
+- Security code review
+- Modelagem de ameaças (Threat Modeling)
+- Boas práticas de codificação segura
+- Desenvolvimento seguro (Secure SDLC)
+- Tópicos ofensivos que todo Appsec deve saber
 
-> Para tópicos ofensivos ou mais amplos sobre segurança web, consulte a [página complementar](#).
+> Para tópicos ofensivos ou mais amplos sobre segurança web, consulte a [Plano de estudo em segurança web](#).
 
----
+### Exemplo de Job Description - AppSec
 
-## 📝 Exemplo de JD (Job Description) - AppSec
+Aqui está um exemplo real de uma job description de vaga para Appsec sênior:
 
-Aqui está um exemplo real de uma **descrição de vaga sênior** na área de Segurança de Aplicações, da empresa **Rippling**:
+> _Inserir o link ou conteúdo da job description aqui_
 
-> _Inserir link ou conteúdo da JD aqui_
-
----
-
-## ✅ Contribua
+### ✅ Contribua
 
 Sinta-se à vontade para contribuir com:
 
