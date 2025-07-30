@@ -12,6 +12,7 @@ Este é um guia completo para se tornar um engenheiro de cibersegurança de suce
 - [ ] [Plano de Estudo de Cloud](https://github.com/vitorluigi/carreira-em-cyber/blob/main/plano-de-estudo-cloud.md)
 - [ ] [Plano de Estudo de Networking](https://github.com/vitorluigi/carreira-em-cyber/blob/main/plano-de-estudo-networking.md)
 - [ ] [Plano de Estudo de DevSecOps](https://github.com/vitorluigi/carreira-em-cyber/blob/main/plano-de-estudo-devsecops.md)
+- [ ] [Plano de Estudo em Modelagem de Ameaças](https://github.com/vitorluigi/carreira-em-cyber/blob/main/plano-de-estudo-modelagem-ameacas.md)
 
 
 <!-- - [ ] Plano de Estudo de Habilidades Comuns  
