@@ -11,8 +11,52 @@
 ### O que é Modelagem de Ameaças
 
 Modelagem de ameaças é uma abordagem estruturada para analisar a segurança de uma aplicação, permitindo identificar, quantificar e tratar riscos de segurança associados.  
-Com detalhes sobre ameaças e ataques prováveis, a organização toma decisões mais eficazes sobre como priorizar iniciativas de segurança.  
+Com detalhes sobre ameaças e ataques prováveis, a empresa pode tomar decisões mais eficazes sobre como priorizar iniciativas de segurança.  
 Além disso, as decisões de aceitação de risco são mais informadas e alinhadas aos objetivos do negócio.
+
+### Ferramentas para explorar
+
+1. [OWASP Threat Dragon](https://www.threatdragon.com/#/)
+2. [Microsoft Threat Modeling Tool](https://learn.microsoft.com/en-us/azure/security/develop/threat-modeling-tool)
+3. [STRIDE GPT](https://stridegpt.streamlit.app/)
+4. [Threagile](https://run.threagile.io/)
+5. [PyTM](https://github.com/izar/pytm)
+6. [draw.io](https://www.drawio.com/)
+7. [Excalidraw](https://excalidraw.com/)
+8. [Iurus Risk - Ferramenta paga para automatizar modelagens](https://www.iriusrisk.com/)
+9. [SD Elements - Ferramenta paga para automatizar modelagens](https://www.securitycompass.com/sdelements/)
+
+### Recursos para aprender e praticar
+
+1. https://owasp.org/www-community/Threat_Modeling
+2. https://www.simplilearn.com/what-is-threat-modeling-article
+3. [Modelagem de Ameaças, o primeiro passo para o Desenvolvimento Seguro de Aplicações](https://medium.com/@fernando-silva/modelagem-de-ameaças-o-primeiro-passo-para-o-desenvolvimento-seguro-de-aplicações-c33649ad856e)
+4. [MITRE Cyber Threat Modeling](https://www.mitre.org/sites/default/files/2021-11/prs-18-1174-ngci-cyber-threat-modeling.pdf)
+5. https://www.jemurai.com/2020/11/10/risk-and-threat-modeling-with-mind-maps/
+6. https://shellsharks.com/threat-modeling
+7. [Awesome Threat Modeling (GitHub)](https://github.com/hysnsec/awesome-threat-modelling)
+8. [Podcast de Threat Modeling - Chris Romeo](https://open.spotify.com/show/4q9BxNrRb0NWnLBpSmNqoP)
+9. [Certificação: Certificação profissional em Modelagem de Ameaças](https://www.practical-devsecops.com/certified-threat-modeling-professional/)
+10. [Kubernetes Threat Modeling](https://www.trendmicro.com/vinfo/in/security/news/security-technology/a-deep-dive-into-kubernetes-threat-modeling)
+11. [AWS S3 Threat Modeling](https://controlcatalog.trustoncloud.com/dashboard/aws/s3)
+
+### Vídeos
+
+1. [Modelagem de Ameaças: qual o papel da pessoa desenvolvedora?](https://www.youtube.com/watch?v=-grCdXWlydw)
+2. [Modelagem de ameaças, canvas. Código Seguro #014](https://www.youtube.com/watch?v=n6UgriY5DU0)
+3. [O que é modelagem de ameaças e por que é importante?](https://youtu.be/h_BC6QMWDbA)
+4. [Introdução a modelagem de ameaças](https://www.youtube.com/watch?v=GqmQg-cszw4)
+
+### Cursos 
+1. [Treinamento gratuito de Modelagem de ameaças da Iurus Risk](https://www.iriusrisk.com/threat-modeling-training)
+2. [Treinamento gratuito da Microsoft sobre fundamentos da Modelagem de ameças](https://learn.microsoft.com/pt-br/training/modules/tm-introduction-to-threat-modeling)
+3. [Treinaemnto gratuito da Microsoft sobre análise de fluxo de dados e STRIDE](https://learn.microsoft.com/en-us/training/paths/tm-threat-modeling-fundamentals)
+4. [Curso Pago na Udemy: STRIDE - Taimur](https://www.udemy.com/course/threat-modeling-using-stride-masterclass/?couponCode=IND21PM)
+
+### Livros
+
+1. [Threat Modeling: A Practical Guide for Development Teams](https://a.co/d/23Bfseu)
+2. [Mastering Threat Modeling A Comprehensive Guide to Identifying and Mitigating Risks](https://a.co/d/790xsbY)
 
 > 💡 **DICA:**  
 > Além deste material, dê uma revisada no [OWASP Threat Modeling Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Threat_Modeling_Cheat_Sheet.html) para entendimento básico.
@@ -84,51 +128,7 @@ Técnicas para reduzir ou eliminar riscos, tanto técnicas (validação de domí
 Verificação da eficácia das estratégias de mitigação. Normalmente crie tarefas para os times de desenvolvimento com os requisitos para ir acompanhando.
 
 ### Revisão e atualização
-
-Modelos devem ser revisados periodicamente para refletir novos cenários.
-
-# Modelagem de Ameaças: Escopo, Abstração e Processo
-
-## 📌 O Escopo (o Limite)
-
-Definir o escopo de um exercício de modelagem de ameaças é sempre uma tarefa difícil e frequentemente controversa. Nesta metodologia, usamos **histórias de usuários** como base para definir esse escopo e os limites do nosso sistema.
-
-Em metodologias ágeis, histórias de usuário são descrições informais de funcionalidades independentes, geralmente da perspectiva do usuário final. A implementação do sistema é uma realização gradual das histórias. Em cada iteração, escolhemos diversas histórias de usuário e construímos um sistema que concretiza os objetivos dessas histórias.
-
-As histórias de usuário selecionadas para uma iteração são uma **ótima fonte de definição de escopo** da sessão de modelagem de ameaças.
-
-> Os componentes desenvolvidos, projetados ou planejados para essa iteração estão no escopo, assim como os sistemas com os quais interagem.
-
-Também fazem parte do escopo:
-- Os usuários (e possíveis abusadores);
-- Os canais de comunicação;
-- O ambiente do sistema e pontos de integração.
-
----
-
-## 🧱 Níveis de Abstração
-
-O exercício sempre parte do **nível mais alto de abstração**, considerando os componentes como **caixas-pretas** que interagem via comunicação de dados. Por isso, utilizamos **diagramas de fluxo de dados (DFD)** como ferramenta central.
-
-![Exemplo de diagrama de fluxo de dados](images/dfd_converted.png)
-
-Após identificar vulnerabilidades nesse nível, selecionamos um subsistema, geralmente o recém-desenvolvido - e **aprofundamos a análise**:
-
-- O componente passa a ser tratado como uma **caixa-branca**;
-- Subcomponentes e interações internas são avaliados;
-- O processo é **repetido para cada componente relevante**;
-- Se o ambiente do componente não mudou, não é necessário descer mais no nível de abstração.
-
----
-
-## 🛠️ Ferramentas de Modelagem
-
-As ferramentas que ajudam a **clarear os fluxos e interações** e a **gerenciar a complexidade** são bem-vindas. As mais eficazes são:
-
-- **Diagramas arquiteturais com componentes** – mostram os sistemas em níveis adequados de abstração;
-- **Diagramas de fluxo de dados (DFD)** – representam o fluxo de dados entre componentes e sistemas.
-
----
+ Modelos devem ser revisados periodicamente para refletir novos cenários.
 
 ## 🧭 O Processo
 
@@ -154,7 +154,17 @@ As ferramentas que ajudam a **clarear os fluxos e interações** e a **gerenciar
 
 > 📌 Este processo é iterativo e será repetido em cada nova iteração do projeto. O modelo de ameaças evolui junto com o sistema.
 
+## 🛠️ Inputs para uma boa modelagem
+
+Os inputs que ajudam a **clarear os fluxos e interações** e a **gerenciar a complexidade** são bem-vindas. Acione o time de arquitetura da solução ou desenvolvedores próximos para obtê-las. As mais eficazes são:
+
+- **Diagramas arquiteturais com componentes** – mostram os sistemas em níveis adequados de abstração;
+- **Diagramas de fluxo de dados (DFD)** – representam o fluxo de dados entre componentes e sistemas.
+![Exemplo de diagrama de fluxo de dados](images/dfd_converted.png)
+
 ---
+
+
 
 ## 📈 Evolução Contínua
 
@@ -187,45 +197,6 @@ Após entender e praticar:
    - modelagem automatizada
    - modelagem rápida
    - modelagem avançada
-
-### Ferramentas para explorar
-
-1. [OWASP Threat Dragon](https://www.threatdragon.com/#/)
-2. [Microsoft Threat Modeling Tool](https://learn.microsoft.com/en-us/azure/security/develop/threat-modeling-tool)
-3. [STRIDE GPT](https://stridegpt.streamlit.app/)
-4. [Threagile](https://run.threagile.io/)
-5. [PyTM](https://github.com/izar/pytm)
-6. [draw.io](https://www.drawio.com/)
-
-### Recursos para aprender e praticar
-
-1. https://owasp.org/www-project-threat-dragon/
-2. https://owasp.org/www-community/Threat_Modeling
-3. https://www.simplilearn.com/what-is-threat-modeling-article
-4. https://www.synopsys.com/glossary/what-is-threat-modeling.html
-5. https://www.eccouncil.org/threat-modeling/
-6. https://komsr3ll.medium.com/threat-modelling-attack-vectors-4f4989336588
-7. [Mindmap Red Team](https://www.oreilly.com/library/view/hands-on-red-team/9781788995238/55d89c3e-e3f2-414a-872f-37620e9ab43f.xhtml)
-8. [MITRE Cyber Threat Modeling](https://www.mitre.org/sites/default/files/2021-11/prs-18-1174-ngci-cyber-threat-modeling.pdf)
-9. https://redcanary.com/blog/threat-modeling/
-10. https://www.jemurai.com/2020/11/10/risk-and-threat-modeling-with-mind-maps/
-11. https://shellsharks.com/threat-modeling
-12. [Awesome Threat Modeling (GitHub)](https://github.com/hysnsec/awesome-threat-modelling)
-13. [Podcast de Threat Modeling - Chris Romeo](https://open.spotify.com/show/4q9BxNrRb0NWnLBpSmNqoP)
-14. [Post no LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:7209798162687873026/)
-15. [Certificação: Certified Threat Modeling Professional](https://www.practical-devsecops.com/certified-threat-modeling-professional/)
-16. [Kubernetes Threat Modeling](https://www.trendmicro.com/vinfo/in/security/news/security-technology/a-deep-dive-into-kubernetes-threat-modeling)
-17. [AWS S3 Threat Modeling](https://controlcatalog.trustoncloud.com/dashboard/aws/s3)
-
-### Vídeos :bulb:
-
-1. https://youtu.be/h_BC6QMWDbA  
-2. https://youtu.be/GqmQg-cszw4  
-3. https://youtu.be/fggB70PxhmA  
-4. https://youtu.be/lnvYlg4HOX4  
-5. https://youtu.be/GuhIefIGeuA  
-6. https://youtu.be/CjzdC0Eerfw  
-7. [Curso Pago na Udemy: STRIDE - Taimur](https://www.udemy.com/course/threat-modeling-using-stride-masterclass/?couponCode=IND21PM)
 
 ### Livros :books:
 
