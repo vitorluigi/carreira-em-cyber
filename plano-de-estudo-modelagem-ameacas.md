@@ -71,39 +71,108 @@ Identificação de dados, sistemas, pessoas e hardware que precisam de proteçã
 
 Identificação de possíveis ameaças com base em brainstorms, relatórios e especialistas.
 
-### Probabilidade e Impacto
+### Probabilidade e impacto
 
 Avaliação de cada ameaça em termos de risco e impacto para priorização.
 
-### Estratégias de Mitigação
+### Estratégias de mitigação
 
 Técnicas para reduzir ou eliminar riscos, tanto técnicas (validação de domínio por CSP, uso de rate_limit, validação de parâmetros de entrada no backend, uso de EDR em servidores, etc) quanto não técnicas (treinamentos, políticas).
 
-### Testes e Validação
+### Testes e validação
 
 Verificação da eficácia das estratégias de mitigação. Normalmente crie tarefas para os times de desenvolvimento com os requisitos para ir acompanhando.
 
-### Revisão e Atualização
+### Revisão e atualização
 
 Modelos devem ser revisados periodicamente para refletir novos cenários.
 
-## Passos para Executar Modelagem de Ameaças
+# Modelagem de Ameaças: Escopo, Abstração e Processo
 
-1. **Definir o escopo do sistema e ativos.**
-2. **Identificar ameaças.**
-3. **Analisar probabilidade e impacto.**
-4. **Desenvolver estratégias de mitigação.**
-5. **Testar e validar as soluções.**
-6. **Revisar e atualizar periodicamente.**
+## 📌 O Escopo (o Limite)
+
+Definir o escopo de um exercício de modelagem de ameaças é sempre uma tarefa difícil e frequentemente controversa. Nesta metodologia, usamos **histórias de usuários** como base para definir esse escopo e os limites do nosso sistema.
+
+Em metodologias ágeis, histórias de usuário são descrições informais de funcionalidades independentes, geralmente da perspectiva do usuário final. A implementação do sistema é uma realização gradual das histórias. Em cada iteração, escolhemos diversas histórias de usuário e construímos um sistema que concretiza os objetivos dessas histórias.
+
+As histórias de usuário selecionadas para uma iteração são uma **ótima fonte de definição de escopo** da sessão de modelagem de ameaças.
+
+> Os componentes desenvolvidos, projetados ou planejados para essa iteração estão no escopo, assim como os sistemas com os quais interagem.
+
+Também fazem parte do escopo:
+- Os usuários (e possíveis abusadores);
+- Os canais de comunicação;
+- O ambiente do sistema e pontos de integração.
+
+---
+
+## 🧱 Níveis de Abstração
+
+O exercício sempre parte do **nível mais alto de abstração**, considerando os componentes como **caixas-pretas** que interagem via comunicação de dados. Por isso, utilizamos **diagramas de fluxo de dados (DFD)** como ferramenta central.
+
+![Exemplo de diagrama de fluxo de dados](images/dfd_converted.png)
+
+Após identificar vulnerabilidades nesse nível, selecionamos um subsistema, geralmente o recém-desenvolvido - e **aprofundamos a análise**:
+
+- O componente passa a ser tratado como uma **caixa-branca**;
+- Subcomponentes e interações internas são avaliados;
+- O processo é **repetido para cada componente relevante**;
+- Se o ambiente do componente não mudou, não é necessário descer mais no nível de abstração.
+
+---
+
+## 🛠️ Ferramentas de Modelagem
+
+As ferramentas que ajudam a **clarear os fluxos e interações** e a **gerenciar a complexidade** são bem-vindas. As mais eficazes são:
+
+- **Diagramas arquiteturais com componentes** – mostram os sistemas em níveis adequados de abstração;
+- **Diagramas de fluxo de dados (DFD)** – representam o fluxo de dados entre componentes e sistemas.
+
+---
+
+## 🧭 O Processo
+
+### 1. Definir o escopo
+- Observe as histórias de usuário da iteração em andamento (ou já desenvolvidas).
+  
+### 2. Criar o modelo de componentes
+- Colaborativamente desenhe os componentes principais que atendem às histórias.
+- Inclua usuários e canais de comunicação como componentes separados.
+
+### 3. Criar diagramas de fluxo de dados
+- Para cada cenário (principal e de exceção), modele como os dados fluem entre sistemas.
+
+### 4. Identificar vulnerabilidades
+- A partir dos modelos, utilize STRIDE, mapa de ataque, ou outras técnicas para identificar riscos.
+
+### 5. Analisar componentes
+- Identifique os componentes novos ou com mudanças significativas;
+- Modele seus subcomponentes e repita o processo a partir do passo 3.
+
+### 6. Repetir conforme necessário
+- Continue aprofundando até não haver necessidade de novo detalhamento.
+
+> 📌 Este processo é iterativo e será repetido em cada nova iteração do projeto. O modelo de ameaças evolui junto com o sistema.
+
+---
+
+## 📈 Evolução Contínua
+
+A cada iteração com novas histórias de usuário:
+- O modelo de ameaças será atualizado;
+- A maturidade da segurança aumenta;
+- A visibilidade sobre os riscos do sistema se amplia.
+
+---
 
 > 💡 **DICA:**  
 > Pratique com Apache Juiceshop, WordPress na AWS, ou aplicação com APIs e integrações.
 
-### Diagrama de Exemplo (Amazon Elasticsearch) :tada:
+### Diagrama arquitetural de exemplo (App Banking)
 
-![Exemplo de Modelagem de Ameaças](./images/Amazon_ElasticSearch_Basic_TM.png)
+![Exemplo de Modelagem de Ameaças](images/banking-dfd.jpg)
 
-### Próximos Passos
+### Próximos passos
 
 Após entender e praticar:
 
@@ -119,7 +188,7 @@ Após entender e praticar:
    - modelagem rápida
    - modelagem avançada
 
-### Ferramentas para Explorar
+### Ferramentas para explorar
 
 1. [OWASP Threat Dragon](https://www.threatdragon.com/#/)
 2. [Microsoft Threat Modeling Tool](https://learn.microsoft.com/en-us/azure/security/develop/threat-modeling-tool)
@@ -128,7 +197,7 @@ Após entender e praticar:
 5. [PyTM](https://github.com/izar/pytm)
 6. [draw.io](https://www.drawio.com/)
 
-### Recursos para Aprender e Praticar
+### Recursos para aprender e praticar
 
 1. https://owasp.org/www-project-threat-dragon/
 2. https://owasp.org/www-community/Threat_Modeling
