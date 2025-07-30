@@ -6,7 +6,7 @@
 ![Plano de Estudos de Modelagem de Ameaças](images/threat_modelling.png)
 
 > 💡 **Nota:**  
-> Leva cerca de 2-3 meses para adquirir um bom entendimento de Threat Modelling com alguma experiência prática.
+> Leva cerca de 2-3 meses para adquirir um bom entendimento de Threat Modeling com alguma experiência prática.
 
 ### O que é Modelagem de Ameaças
 
@@ -28,12 +28,11 @@ Além disso, as decisões de aceitação de risco são mais informadas e alinhad
 
 ### Recursos para aprender e praticar
 
-1. https://owasp.org/www-community/Threat_Modeling
-2. https://www.simplilearn.com/what-is-threat-modeling-article
+1. [Threat Modeling Manifesto](https://www.threatmodelingmanifesto.org/)
+2. [Artigo - O que é modelagem de ameaças](https://www.simplilearn.com/what-is-threat-modeling-article)
 3. [Modelagem de Ameaças, o primeiro passo para o Desenvolvimento Seguro de Aplicações](https://medium.com/@fernando-silva/modelagem-de-ameaças-o-primeiro-passo-para-o-desenvolvimento-seguro-de-aplicações-c33649ad856e)
 4. [MITRE Cyber Threat Modeling](https://www.mitre.org/sites/default/files/2021-11/prs-18-1174-ngci-cyber-threat-modeling.pdf)
-5. https://www.jemurai.com/2020/11/10/risk-and-threat-modeling-with-mind-maps/
-6. https://shellsharks.com/threat-modeling
+5. [Modelagem de Ameaças - Um guia de bolso](https://shellsharks.com/threat-modeling)
 7. [Awesome Threat Modeling (GitHub)](https://github.com/hysnsec/awesome-threat-modelling)
 8. [Podcast de Threat Modeling - Chris Romeo](https://open.spotify.com/show/4q9BxNrRb0NWnLBpSmNqoP)
 9. [Certificação: Certificação profissional em Modelagem de Ameaças](https://www.practical-devsecops.com/certified-threat-modeling-professional/)
@@ -159,12 +158,15 @@ Verificação da eficácia das estratégias de mitigação. Normalmente crie tar
 Os inputs que ajudam a **clarear os fluxos e interações** e a **gerenciar a complexidade** são bem-vindas. Acione o time de arquitetura da solução ou desenvolvedores próximos para obtê-las. As mais eficazes são:
 
 - **Diagramas arquiteturais com componentes** – mostram os sistemas em níveis adequados de abstração;
+
+   ![Exemplo de Modelagem de Ameaças](images/diagrama_arquitetural.png)
+  
 - **Diagramas de fluxo de dados (DFD)** – representam o fluxo de dados entre componentes e sistemas.
-![Exemplo de diagrama de fluxo de dados](images/dfd_converted.png)
 
----
+   ![Exemplo de diagrama de fluxo de dados](images/dfd_converted.png)
 
-
+> 💡 **DICA:**  
+> Pratique com Apache Juiceshop, WordPress na AWS, ou aplicação com APIs e integrações.
 
 ## 📈 Evolução Contínua
 
@@ -173,33 +175,20 @@ A cada iteração com novas histórias de usuário:
 - A maturidade da segurança aumenta;
 - A visibilidade sobre os riscos do sistema se amplia.
 
----
-
-> 💡 **DICA:**  
-> Pratique com Apache Juiceshop, WordPress na AWS, ou aplicação com APIs e integrações.
-
-### Diagrama arquitetural de exemplo (App Banking)
-
-![Exemplo de Modelagem de Ameaças](images/banking-dfd.jpg)
-
 ### Próximos passos
 
 Após entender e praticar:
 
 1. Como aplicar modelagem no SDLC existente?
-2. Quais os desafios técnicos esperados?
-3. Como torná-la escalável?
-4. Como lidar com diferentes tipos de aplicação?
-5. Qual metodologia adotar na sua organização?
-6. Como validar os achados?
-7. Conheça e aplique:
+2. Como usar a IA para construir uma modelagem de ameaças (Stride GPT)?
+3. Quais os desafios técnicos esperados?
+4. Como torná-la escalável?
+5. Como lidar com diferentes tipos de aplicação?
+6. Qual metodologia adotar na sua organização?
+7. Como validar os achados?
+8. Conheça e aplique:
    - modelagem de ameaças ágil
    - modelagem automatizada
    - modelagem rápida
    - modelagem avançada
-
-### Livros :books:
-
-1. [Threat Modeling: Design for Security - Adam Shostack](https://amzn.to/3zfKefb)  
-2. [Threat Modeling - Izar Tarandach](https://amzn.to/4gEgbif)
 
