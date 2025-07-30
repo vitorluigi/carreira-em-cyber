@@ -97,13 +97,6 @@ Em resumo:
 4. PASTA (outra metodologia de modelagem de ameaças)
 5. LINDDUN (foco em privacidade)
 
-#### Resultados esperados
-
-+ **Diagramas de Sistema:** Ilustrações completas da arquitetura e fluxos.
-+ **Requisitos de Segurança:** Critérios para proteger o sistema.
-+ **Lista de Ameaças:** Ameaças com suas estratégias de mitigação.
-+ **Demonstração da exploração:** Demosntração realizada através de pentest da explorabilidade do risco (quando aplicável).
-
 ## Áreas cobertas pela modelagem
 
 ### Ativos
@@ -159,7 +152,7 @@ Os inputs que ajudam a **clarear os fluxos e interações** e a **gerenciar a co
 
 - **Diagramas arquiteturais com componentes** – mostram os sistemas em níveis adequados de abstração;
 
-   ![Exemplo de Modelagem de Ameaças](images/diagrama_arquitetural.png)
+   ![Exemplo de Modelagem de Ameaças](images/Diagrama_arquiteturalAWS.webp)
   
 - **Diagramas de fluxo de dados (DFD)** – representam o fluxo de dados entre componentes e sistemas.
 
@@ -167,6 +160,45 @@ Os inputs que ajudam a **clarear os fluxos e interações** e a **gerenciar a co
 
 > 💡 **DICA:**  
 > Pratique com Apache Juiceshop, WordPress na AWS, ou aplicação com APIs e integrações.
+
+### Identificando ameaças
+
+A modelagem de ameaças pode ser feita a partir de diferentes perspectivas. Para fazer esse exercício, use o STRIDE para identificar a lista de vulnerabilidades.
+
+- **S**poofing (falsificação) - Ex.: Login sem autenticação
+- **T**ampering (adulteração) - Ex.: Alteração de arquivos num bucket
+- **R**epudation (repúdio) - Ex.: Ausência de eventos e logs precisos
+- **I**formation Disclosure (descoberta de informação) - Ex.: Dados sensíveis em erro 500
+- **D**enial of Service (negação de serviço) - Ex.: Overload em uma API
+- **E**levate privilege (elevação de privilégio) - Ex.: Usuário comum vira admin
+
+Cada componente do sistema é revisado, e uma lista de ameaças - com um mapeamento para o STRIDE - é apresentada aqui. 
+
+| Linha | Componente                         | Ameaça                                                                                  | STRIDE                      | Controle de Mitigação                                                                                   | Tipo de Controle | Como implementar o controle?                                                                                                                                                       |
+|-------|------------------------------------|-----------------------------------------------------------------------------------------|-----------------------------|---------------------------------------------------------------------------------------------------------|------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1     | Serviço de Notificação             | Um invasor falsifica a identidade de um componente e envia mensagens em seu nome              | Falsificação (Spoofing)     | Assinatura das mensagens pelo componente                                                                    | Preventivo       | O serviço de notificação assina as mensagens antes de publicá-las na fila. Verificar a autenticidade do remetente deve ser feito antes de consumir as mensagens.                     |
+| 2     | Comunicação entre componentes         | Um invasor intercepta uma mensagem no meio do caminho e altera seu conteúdo            | Adulteração     | Assinatura das mensagens pelo componente                                                                   | Preventivo       | O componente assina as mensagens antes de publicá-las na fila. As assinaturas devem ser verificadas antes do consumo da mensagem para garantir que não houve alteração.                     |
+| 3     | Componente SaaS-A                             | O serviço nega ter enviado uma determinada mensagem                                     | Repúdio                     | Assinatura das mensagens pelo componente                                                                 | Preventivo       | -                                                                                                                                                                                    |
+| 4     | Comunicação SaaS-a com serviço de gerenciamento de filas           | Um invasor intercepta e lê as mensagens                                                 | Divulgação de informações   | Permitir apenas conexões criptografadas via TLS                                                         | Preventivo       | Adicionar uma condição na política do recurso SQS para exigir TLS                                                                                                                   |
+| 5     | SQS - Serviço de gerenciamento de filas Amazon                                | O serviço de notificação remove a fila do SQS                                           | Negação de Serviço (DoS)    | Políticas baseadas em recursos do SQS restringem a função IAM do serviço de notificação a enviar mensagens apenas para a fila SQS              | Preventivo       | Implementação da política baseada em recurso do SQS                                                                                                                                 |
+| 6     | SQS - Serviço de gerenciamento de filas Amazon                                   | Um invasor pode obter acesso apenas leitura e ler dados pessoais da fila               | Divulgação de informações   | Políticas baseadas em recurso do SQS restringem o acesso a uma conta IAM específica do SaaS-a                                                | Preventivo       | Implementação da política baseada em recurso do SQS                                                                                                                                 |
+|       |                                     |                                                                                         | Divulgação de informações   | Criptografar as mensagens em repouso                                                                    | Preventivo       | Ativar SSE (Server-Side Encryption) para o SQS e garantir que não haja dados pessoais nos atributos das mensagens (SQS não criptografa atributos).                                  |
+| 7     | KMS                                 | O serviço de notificação chama o KMS diretamente e descriptografa mensagens             | Divulgação de informações   | A chamada à API Decrypt no serviço KMS deve ser permitida apenas se a requisição vier via SQS (condição na política da chave CMK)             | Preventivo       | Adicionar condição na política da chave KMS para impor essa regra                                                                                                                   |
+| 8     | Comunicação SaaS-a com SQS         | Um invasor injeta dados maliciosos na fila SQS causando comportamento inesperado        | Elevação de privilégio      | Assinatura das mensagens pelo SaaS-a                                                                    | Preventivo       | SaaS-a assina as mensagens antes de publicá-las na fila. Verificar a integridade da mensagem antes de consumi-la.                                                                   |
+| 9     | KMS                                 | Desenvolvedor/engenheiro de plataforma pode alterar políticas da chave e descriptografar mensagens | Violação de integridade     | Todas as mudanças no ambiente de produção devem passar por solicitação de mudança e revisão por pares                                         | Preventivo       | Definir um processo de Change Request para o ambiente de produção                                                                                                                   |
+|       |                                     |                                                                                         | Violação de integridade     | Monitoramento de atividades privilegiadas                                                               | Detetivo         | Definir casos de uso de monitoramento                                                                                                                                                |
+| 10    | SQS - Serviço de gerenciamento de filas Amazon                           | Desenvolvedor/engenheiro de plataforma pode alterar políticas do SQS e liberar acesso a publicadores não autorizados | Violação de integridade     | Todas as mudanças no ambiente de produção devem passar por solicitação de mudança e revisão por pares                                         | Preventivo       | Definir um processo de Change Request para o ambiente de produção                                                                                                                   |
+|       |                                     |                                                                                         | Violação de integridade     | Monitoramento de atividades privilegiadas                                                               | Detetivo         | Definir casos de uso de monitoramento                                                                                                                                                |
+| 11    | Serviço de Notificação             | O serviço envia notificações de eventos que não foram iniciados pelo microserviço-3     | -                           | Verificar a referência da mensagem recebida com o evento iniciado                                       | Preventivo       | Verificação deve ser feita para garantir que a mensagem recebida pertença a um evento iniciado pelo microserviço-3                                                                 |
+
+Após identificar as ameaças, precisamos projetar o controle para mitigar o risco - e aceitar o risco residual - caso ele não fosse inicialmente aceitável. É fundamental não parar por aí e produzir os detalhes em nível de código para implementar os controles.
+
+#### Resultados esperados
+
++ **Diagramas de Sistema:** Ilustrações completas da arquitetura e fluxos.
++ **Requisitos de Segurança:** Critérios para proteger o sistema.
++ **Lista de Ameaças:** Ameaças com suas estratégias de mitigação.
++ **Demonstração da exploração:** Demosntração realizada através de pentest da explorabilidade do risco (quando aplicável).
 
 ## 📈 Evolução Contínua
 
@@ -191,4 +223,3 @@ Após entender e praticar:
    - modelagem automatizada
    - modelagem rápida
    - modelagem avançada
-
