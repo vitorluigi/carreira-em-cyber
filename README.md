@@ -92,6 +92,7 @@ Antes de aplicar para uma vaga, reflita:
 Ferramenta útil para construir seu currículo: [rxresu.me](https://rxresu.me)
 
 ### Modelos recomendados:
+- [ResumeAI](https://withresumeai.com/) — AI resume builder + verificador ATS gratuito (3/dia anônimo, 10/dia com conta free); State of ATS 2026
 - [Zety](https://zety.com)
 - [Easy Resume](https://www.easyresume.io/)
 - [Qwikresume (segurança)](https://www.qwikresume.com)
